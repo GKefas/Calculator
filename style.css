@@ -37,13 +37,17 @@ body{
 #Tittle{
     font-size: 40px;
     letter-spacing: 3px;
-    background: linear-gradient(70deg,#d8b1ff, #b668ff);
+    background: linear-gradient(70deg,#d8b1ff, #8a2be2);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-bottom: 2px solid #52247e;
+    border-bottom: 2px solid #8a2be2;
     padding-bottom: 10px;
     margin: 0 -20px 10px;
-    text-shadow: rgba(182, 104, 255,0.7) 1px 1.5px 3.5px;
+}
+
+.fa-calculator{
+    font-size: 0.8em;
+    padding-left: 15px;
 }
 
 .output{
