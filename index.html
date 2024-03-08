@@ -17,34 +17,34 @@
         <div class="topWrapper">
             <div id="Tittle">Calculator<i class="fa-solid fa-calculator"></i></div>
             <div class="output">
-                <div class="previousActions" id="PreviousActionsDisplay">1000 + 50</div>
-                <div class="resultOutput" id="display">1500</div>
+                <div class="previousActions" id="PreviousActionsDisplay"></div>
+                <div class="resultOutput" id="display"></div>
             </div>
         </div>
         <div class="Buttons">
-            <div class="Button AC" onclick="calc('AC')">AC</div>
-            <div class="Button divide">÷</div>
-            <div class="Button multi">x</div>
-            <div class="Button backspace"><i class="fa-solid fa-delete-left"></i></div>
+            <div class="Button AC" id="clear" onclick="clearDisplay()">AC</div>
+            <div class="Button divide" onclick="appendToDisplay('/')">/</div>
+            <div class="Button multi" onclick="appendToDisplay('*')">*</div>
+            <div class="Button backspace" onclick="remove()"><i class="fa-solid fa-delete-left"></i></div>
 
-            <div class="Button num" onclick="calc('7')">7</div>
-            <div class="Button num">8</div>
-            <div class="Button num">9</div>
-            <div class="Button minus">-</div>
+            <div class="Button num" onclick="appendToDisplay('7')">7</div>
+            <div class="Button num" onclick="appendToDisplay('8')">8</div>
+            <div class="Button num" onclick="appendToDisplay('9')">9</div>
+            <div class="Button minus" onclick="appendToDisplay('-')">-</div>
 
-            <div class="Button num">4</div>
-            <div class="Button num">5</div>
-            <div class="Button num">6</div>
-            <div class="Button plus">+</div>
+            <div class="Button num" onclick="appendToDisplay('4')">4</div>
+            <div class="Button num" onclick="appendToDisplay('5')">5</div>
+            <div class="Button num" onclick="appendToDisplay('6')">6</div>
+            <div class="Button plus" onclick="appendToDisplay('+')">+</div>
 
-            <div class="Button num">1</div>
-            <div class="Button num">2</div>
-            <div class="Button num">3</div>
-            <div class="Button result">=</div>
+            <div class="Button num" onclick="appendToDisplay('1')">1</div>
+            <div class="Button num" onclick="appendToDisplay('2')">2</div>
+            <div class="Button num" onclick="appendToDisplay('3')">3</div>
+            <div class="Button result" onclick="calculate()">=</div>
 
-            <div class="Button dot">00</div>
-            <div class="Button num">0</div>
-            <div class="Button percentage">%</div>
+            <div class="Button num" onclick="appendToDisplay('.')">.</div>
+            <div class="Button num" onclick="appendToDisplay('0')">0</div>
+            <div class="Button percentage" onclick="appendToDisplay('%')">%</div>
 
 
 

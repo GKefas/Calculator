@@ -117,12 +117,21 @@ body{
     color:rgb(194, 146, 238);
 }
 
+
+.invisible{
+    opacity: 0;
+}
+
 .Button:active{
     transform: scale(0.9);
 }
 
 .num:hover{
     background-color: black;
+}
+
+.error{
+    color: rgba(220, 20, 60, 0.801);
 }
 
 @media only screen and (max-width:580px),(max-height:570px){
