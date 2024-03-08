@@ -134,7 +134,7 @@ body{
     color: rgba(220, 20, 60, 0.801);
 }
 
-@media only screen and (max-width:580px),(max-height:650px){
+@media only screen and (max-width:420px),(max-height:450px){
         body{
             background-repeat:repeat-y ;
             font-size: 13px;
