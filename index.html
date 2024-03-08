@@ -13,21 +13,21 @@
 </head>
 
 <body>
-    <div class="CalculatorContainer">
+    <form class="CalculatorContainer">
         <div class="topWrapper">
             <div id="Tittle">Calculator<i class="fa-solid fa-calculator"></i></div>
             <div class="output">
-                <div class="previousActions">1000+500</div>
-                <div class="resultOutput">1500</div>
+                <div class="previousActions" id="PreviousActionsDisplay">1000 + 50</div>
+                <div class="resultOutput" id="display">1500</div>
             </div>
         </div>
         <div class="Buttons">
-            <div class="Button AC">AC</div>
+            <div class="Button AC" onclick="calc('AC')">AC</div>
             <div class="Button divide">÷</div>
             <div class="Button multi">x</div>
             <div class="Button backspace"><i class="fa-solid fa-delete-left"></i></div>
 
-            <div class="Button num">7</div>
+            <div class="Button num" onclick="calc('7')">7</div>
             <div class="Button num">8</div>
             <div class="Button num">9</div>
             <div class="Button minus">-</div>
@@ -42,7 +42,7 @@
             <div class="Button num">3</div>
             <div class="Button result">=</div>
 
-            <div class="Button dot">.</div>
+            <div class="Button dot">00</div>
             <div class="Button num">0</div>
             <div class="Button percentage">%</div>
 
@@ -56,7 +56,7 @@
         </div>
     </div>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
